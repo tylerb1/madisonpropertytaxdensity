@@ -28,13 +28,15 @@ const Map = () => {
           source: "taxes",
           type: "fill-extrusion",
           paint: {
-            "fill-extrusion-color": ["interpolate", ['linear'], ["/", ["get", "NetTaxes"], ["get", "LotSize"]], 0, "green", 10, "red"],
+            "fill-extrusion-color": ["interpolate", ['linear'], ["/", ["get", "NetTaxes"], ["get", "LotSize"]], 0, "blue", 10, "purple"],
             "fill-extrusion-height": ["*", 100, ["/", ["get", "NetTaxes"], ["get", "LotSize"]]],
             "fill-extrusion-base": 0,
             "fill-extrusion-opacity": 0.6
           }
         }
       );
+
+      map.addControl(new mapboxgl.NavigationControl());
     });
 
     return () => map.remove();
