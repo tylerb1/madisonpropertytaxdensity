@@ -28,10 +28,10 @@ const Map = () => {
           source: "taxes",
           type: "fill-extrusion",
           paint: {
-            "fill-extrusion-color": ["interpolate", ['linear'], ["/", ["get", "NetTaxes"], ["get", "LotSize"]], 0, "blue", 10, "purple"],
+            "fill-extrusion-color": ["interpolate", ['linear'], ["/", ["get", "NetTaxes"], ["get", "LotSize"]], 0, "purple", 10, "blue", 20, "green", 30, "yellow"],
             "fill-extrusion-height": ["*", 100, ["/", ["get", "NetTaxes"], ["get", "LotSize"]]],
             "fill-extrusion-base": 0,
-            "fill-extrusion-opacity": 0.6
+            "fill-extrusion-opacity": 0.8
           }
         }
       );
