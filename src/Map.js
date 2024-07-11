@@ -45,6 +45,18 @@ const Map = () => {
   return (
     <div>
       <div ref={mapContainerRef} className='map-container' />
+      <div style={{ 
+        position: "absolute", 
+        top: "108px", 
+        right: "8px", 
+        backgroundColor: "white", 
+        borderRadius: "4px", 
+        padding: "0px 4px",
+        textAlign: "right",
+        fontSize: "12px"
+      }}>
+        <p>Change pitch:<br/>Shift + ↑/↓</p>
+      </div>
     </div>
   );
 };
